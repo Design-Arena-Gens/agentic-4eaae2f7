@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Manrope', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+html, body {
+  @apply bg-lux-bg text-lux-ivory antialiased;
+}
+
+.container-lux {
+  @apply mx-auto max-w-7xl px-6 md:px-8;
+}
+
+.section {
+  @apply relative py-20 md:py-28;
+}
+
+.section-heading {
+  @apply font-display text-3xl md:text-5xl tracking-tight text-lux-ivory;
+}
+
+.section-subtitle {
+  @apply mt-4 max-w-2xl text-base md:text-lg text-lux-slate;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium transition;
+}
+
+.btn-gold {
+  @apply btn bg-lux-gold/90 text-black hover:bg-lux-gold shadow-glow;
+}
+
+.card {
+  @apply rounded-2xl border border-white/5 bg-gradient-to-b from-white/5 to-transparent backdrop-blur-sm;
+}
